@@ -39,6 +39,6 @@ export class DestinationsListComponent implements OnInit {
 
   public update(id:string) {
     console.log("update : " + id);
-    this.router.navigateByUrl('/products/add' + id);
+    this.router.navigateByUrl('/destinations/add/' + id);
   }
 }
