@@ -1,0 +1,26 @@
+
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>{{ title }}</h1>
+    <h2>Angular 2+ & Bootstrap 4 & Ruby on Rails</h2>
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading" style="background: greenyellow;">
+
+      <a routerLink="/destinations">Destinations</a>
+      <a routerLink="/destinations/add">Add Destinations</a>
+
+    </div>
+    <div class="panel-body">
+      <ul>
+        <li *ngFor="let destination of destinations">
+          Country: {{ destination.country }}
+          City: {{ destination.city }}
+          Description: {{ destination.description }}
+        </li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

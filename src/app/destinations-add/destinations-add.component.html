@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label class="col-xs-4 control-label" for="">Destination Country: </label>
+    <div class="col-xs-8">
+        <input type="text" style="width: 300px" class="form-control" required [(ngModel)]="destination.country" name="destinationCountry">
+    </div>
+    <label class="col-xs-4 control-label" for="">Destination City: </label>
+    <div class="col-xs-8">
+        <input type="text" style="width: 300px" class="form-control" required [(ngModel)]="destination.city" name="destinationCity">
+    </div>
+    <label class="col-xs-4 control-label" for="">Destination Description: </label>
+    <div class="col-xs-8">
+        <input type="text" style="width: 300px" class="form-control" required [(ngModel)]="destination.description" name="destinationDescription">
+    </div>
+    <div>
+      <input type="submit" value="Create">
+    </div>
+  </div>
+
+</form>
